@@ -1,28 +1,4 @@
-This is a sample theme for Obsidian ([https://obsidian.md](https://obsidian.md/)).
-
-## First Time publishing a theme?
-
-### Quick start
-
-<img width="244" alt="Pasted image 20220822135601" src="https://user-images.githubusercontent.com/693981/186000386-4f4da987-fcaf-4aa5-aed4-e34b5901255d.png">
-
-First, choose **Use this template**. That will create a copy of this repository (repo) under your Github profile. Then, you will want to _clone_ your new repository to your computer.
-
-Once you have the repo locally on your computer, there are a couple of placeholder fields you will need to fill in.
-
-1. Inside the `manifest.json` file, change the "name" field to whatever you want the name of your theme to be. For example:
-
-  ```json
-  {
-    "name": "Moonstone",
-    "version": "0.0.0",
-    "minAppVersion": "1.0.0"
-  }
-  ```
-
-2. Also inside the manifest.json file, you can include your name under next to the "author" field.
-
-After you have those fields configured, all that's left to do is add your styles! All of your CSS needs to be inside the file `theme.css` which is located at root of your repository.
+This is Sea Glass Theme for Obsidian ([https://obsidian.md](https://obsidian.md/)).
 
 ## Adding your theme to the Theme Gallery
 
