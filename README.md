@@ -1,71 +1,33 @@
-This is Sea Glass Theme for Obsidian ([https://obsidian.md](https://obsidian.md/)).
+# Sea Glass Theme for Obsidian
 
-## Adding your theme to the Theme Gallery
+![Sea Glass Logo](assets/logo.png)
 
-### Add a screenshot thumbnail
+---
+### About:
+After switching to Obsidian for my note taking, I wanted to implement a custom theme I made for VSCode to keep my workflow looking consistent.
 
-Inside the repository, include a screenshot thumbnail of your theme. You can name the file anything, for example `screenshot.png`. This image will be used for the small preview in the theme list.
+The goal of this theme was to create something that was easy on the eyes and had a bit of color inspired by the beach. I hope you enjoy it!
 
-Your screenshot file should be `16:9` aspect ratio.
-The recommended size is 512x288.
+---
+### Sea Glass Theme for VSCode:
+As mentioned above, I have a VSCode theme that is very similar to this one. If you enjoy this theme for Obsidian, I would greatly appreciate if you checked it out for VSCode too!
 
-### Submit your theme for review
+You can find it [Here.](https://marketplace.visualstudio.com/items?itemName=KyleStewart.sea-glass-color-theme)
 
-To have your theme included in the Theme Gallery, you will need to submit a Pull Request to [`obsidianmd/obsidian-releases`](https://github.com/obsidianmd/obsidian-releases#community-theme).
+---
+### Features:
+- This theme is soley for dark mode and does not support light mode at all.
+- The [Euclid Circular A](https://www.cufonfonts.com/font/euclid-circular-a) font is built in to the theme and is used for the UI and editor. If you do not have this font installed, the theme should fall back to the default font. I highly recommend installing this font for the best experience.
+- For code blocks, [CaskaydiaCove Nerd Font Mono](https://github.com/eliheuer/caskaydia-cove) is used. This font is also built in to the theme and should fall back to the default font if you do not have it installed. Additionally, the syntax highlighting for code blocks is based on the Sea Glass theme for VSCode. If you would like to use this theme for VSCode, you can find it [Here.](https://marketplace.visualstudio.com/items?itemName=KyleStewart.sea-glass-color-theme)
 
-## Releasing Versions _(Optional)_
+---
+### Screenshots:
 
-If your theme is getting more and more complex, you might want to start thinking about how your theme will stay compatible with different versions of Obsidian. Introduced in v0.16 of Obsidian, themes support [Github Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). This means that you can specify which versions of your theme are compatible with which versions of Obsidian.
+![Screenshots](assets/screenshots.png)
 
-### Steps for releasing the initial version of your theme (1.0.0)
+---
+### Future Plans:
+I have no major plans for this theme at the moment. I will be using it for my own notes and will make changes as I see fit. If you have any suggestions, feel free to open an issue or pull request.
 
-1. From your theme's repository, click on "Releases".
-   
-<img width="235" alt="Pasted image 20220822145001" src="https://user-images.githubusercontent.com/693981/186000441-287a1a97-65f6-4b5f-ba66-810ceae91cd3.png">
-
-2. On the Releases page, there should be a button to **Draft a new Release**. Press it.
-
-<img width="202" alt="Pasted image 20220822145048" src="https://user-images.githubusercontent.com/693981/186000664-6c63ae14-f685-4d39-bfe6-324f95cd9669.png">
-
-3. Fill out the Release information form.
-	- **Choose a Tag**: Type in the name of the version number here. At the bottom of the dropdown should be a button to create a new tag with your latest theme changes. Choose this option.
-		<img width="340" alt="Pasted image 20220822145648" src="https://user-images.githubusercontent.com/693981/186000848-bd1c2619-ea09-4e70-a886-40769cda6921.png">
-	- **Release Title**: This can be the version number.
-	- **Description** _Optional_: Anything that changed
-	- **Files:** The most important part of this form is uploading the files. You can do this by dragging 'n dropping the `manifest.json` file and the `theme.css` file your for theme inside the file upload field.
-
-<img width="946" alt="Pasted image 20220822145356" src="https://user-images.githubusercontent.com/693981/186000772-e689ecea-c3b7-4e9d-9204-7ad62c0123aa.png">
-
-4. Click "Publish Release."
-5. Make sure that `versions.json` is set up correctly. This file is a map.
-  ```json
-  {
-    "1.0.0": "0.16.0"
-  }
-  ```
-  
-  This means that version 1.0.0 of your theme is compatible with version 0.16.0 of Obsidian. For the initial release of your theme, you shouldn't need to make any changes to this file.
- 
-### Steps for releasing new versions
-
-Releasing a new version of your theme is the same as releasing the initial version.
-
-1. From your theme's repository, click on "Releases."
-2. On the Releases page, there should be a button to **Draft a new Release**. Press it.
-3. Fill out the Release information form.
-	- **Choose a Tag**: Type in the name of the version number here. At the bottom of the dropdown should be a button to create a new tag with your latest theme changes. Choose this option.
-		<img width="333" alt="Pasted image 20220822145812" src="https://user-images.githubusercontent.com/693981/186000912-f494def9-0f67-4662-92bf-bd278082455f.png">
-	- **Release Title**: This can be the version number.
-	- **Description** _Optional_: Anything that changed
-	- **Files:** The most important part of this form is uploading the files. You can do this by dragging 'n dropping the `manifest.json` file and the `theme.css` file your for theme inside the file upload field.
-
-4. Click "Publish Release."
-5. Update the `versions.json` file in your repository. For the initial release of your theme, you probably didn't need to make any changes to the `versions.json` file. When you release subsequent versions of your theme; however, it's best practice to include the new version as entry in the versions.json file. So this might look like:
-  ```json
-  {  
-		"1.0.0": "0.16.0",
-		"1.0.1": "0.16.0"
-  }
-  ```
-
-  What's important to note here is: the new version is included as the "key" and the "value" is the minimum version of Obsidian that your theme compatible with. So if the new version of your theme is only compatible with an Insider version of Obsidian, it's important to set this value accordingly. This will prevent users on older versions of Obsidian from updating to the newer version of your theme.
+---
+Hope you enjoy!
